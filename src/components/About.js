@@ -27,8 +27,8 @@ export default function About() {
         <main className="relative">
             <img src={about} alt="tech pic" className="absolute w-full"/>
             <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-blue-800 rounded-lg shawod=2xl lg:flex p-20">
-                    <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8 alt={author.name}"/>
+                <section className="bg-blue-800 rounded-lg shawod=2xl py-5 px-3 lg:flex lg:p-20">
+                    <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 mx-auto lg:w-64 lg:h-64 mr-8 alt={author.name}"/>
                     <div className="text-lg flex flex-col justify-center">
                         <h1 className="cursive text-6xl text-blue-300 mb-4">
                             Hey there. I'm{" "}
