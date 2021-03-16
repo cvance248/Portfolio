@@ -11,33 +11,33 @@ export default function NavBar() {
                 to="/" 
                 exact
                 activeClassName="text-white"
-                className="inflex-flex items-center py-6 py-3 mr-4 text-blue-200 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+                className="inline-flex items-center py-6 px-2 text-blue-200 hover:text-green-800 text-2xl font-bold cursive tracking-widest"
                 >
                     Home
                 </NavLink>
                 <NavLink 
                 to="/post" 
-                className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-600"
+                className="inline-flex items-center py-1 px-1 my-1 rounded text-blue-200 hover:text-green-600 text-sm"
                 activeClassName="text-blue-100 bg-blue-700">
-                    Blog Posts
+                    Blog
                 </NavLink>
                 <NavLink 
                 to="/project" 
-                className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-600"
+                className="inline-flex items-center py-1 px-1 my-1 rounded text-blue-200 hover:text-green-600 text-sm"
                 activeClassName="text-blue-100 bg-blue-700">
-                    Projects
+                    My Work
                 </NavLink>
                 <NavLink 
                 to="/about" 
-                className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-600"
+                className="inline-flex items-center py-1 px-1 my-1 rounded text-blue-200 hover:text-green-600 text-sm"
                 activeClassName="text-blue-100 bg-blue-700">
                     About Me
                 </NavLink>
                 </nav>
-                <div className="inline-flex py-3 px-3 my-6">
-                    <SocialIcon url="https://my.indeed.com/p/calebv-9zp52jr" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
-                    <SocialIcon url="https://www.linkedin.com/in/caleb-vance-9548a6178/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
-                    <SocialIcon url="https://www.youtube.com/channel/UCEHKV4cwiJFVtaATDoRNn1g/videos" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
+                <div className="inline-flex py-1 px-1 my-auto">
+                    <SocialIcon url="https://my.indeed.com/p/calebv-9zp52jr" className="mr-1 sm:mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
+                    <SocialIcon url="https://www.linkedin.com/in/caleb-vance-9548a6178/" className="mr-1 sm:mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
+                    <SocialIcon url="https://www.youtube.com/channel/UCEHKV4cwiJFVtaATDoRNn1g/videos" className="mr-1 sm:mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
                 </div>
             </div>
         </header>

@@ -18,13 +18,13 @@ export default function Project() {
   });
 
     return (
-        <main className="bg-green-100 min-h-screen p-12">
+        <main className="bg-blue-100 min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive"></h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12"></h2>
-                <section className="grid grid-cols-2 gap-8">
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projectData && projectData.map((project, index) =>(
-                    <article className="relative rounded-lg shadow-xl bg-white p-16">
+                    <article className="relative rounded-lg shadow-xl bg-white p-1 md:p-16">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                             <a href={project.link}
                             alt={project.title}
@@ -34,9 +34,10 @@ export default function Project() {
                             </a>
                         </h3>
                         <div className="text-gray-500 text-xs space-x-4">
-                            <span></span>
+                            <span>
                                 <strong className="font-bold">Finished on</strong>:{" "}
                                 {new Date(project.date).toLocaleDateString()}
+                                </span>
                             <span>
                             <strong className="font-bold">Company</strong>:{" "}
                             {project.place}
